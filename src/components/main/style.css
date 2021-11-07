@@ -1,0 +1,35 @@
+.table {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 332px 1fr;
+  gap: 15px;
+}
+
+.filter {
+  margin-left: auto;
+  width: 121px;
+}
+
+.filter__select {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #b4b4b4;
+}
+
+.add__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+
+.list-goods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
