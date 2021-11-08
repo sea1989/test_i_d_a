@@ -6,8 +6,8 @@ export default class Item extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div class='list-goods__item'>
-          <div class='list-goods__item__img'>
+        <div className='list-goods__item'>
+          <div className='list-goods__item__img'>
             <img src={henkel} width='332px' height='200px' alt='foto' />
           </div>
           <button
@@ -15,9 +15,9 @@ export default class Item extends React.Component {
             onClick={this.props.onClick}
             className='list-goods__item-del'
           ></button>
-          <h3 class='list-goods__item__title'>{this.props.title}</h3>
-          <p class='list-goods__item__description'>{this.props.description}</p>
-          <span class='list-goods__item__price'>{this.props.price} руб.</span>
+          <h3 className='list-goods__item__title'>{this.props.title}</h3>
+          <p className='list-goods__item__description'>{this.props.description}</p>
+          <span className='list-goods__item__price'>{this.props.price} руб.</span>
         </div>
       </React.Fragment>
     );

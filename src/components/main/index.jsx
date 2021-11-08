@@ -18,11 +18,12 @@ export default class Main extends React.Component {
     });
   }
 
-  changeCard = (name, text, price) => {
+  handleSubmit = (name, text, price, link) => {
     const newArray = this.state.data.concat({
       title: name,
       description: text,
       price: price,
+      photos: link,
     });
 
     this.setState({
@@ -38,7 +39,6 @@ export default class Main extends React.Component {
     const index = copyData.findIndex((item) => item.id === characterName);
 
     copyData.splice(index, 1);
-    console.log(copyData);
     this.setState({
       data: copyData,
     });
@@ -47,16 +47,16 @@ export default class Main extends React.Component {
   render() {
     return (
       <main>
-        <h1 class='visually-hidden'>Тестовое задание</h1>
+        <h1 className='visually-hidden'>Тестовое задание</h1>
         <div className='table'>
           <section className='add'>
             <h2 className='add__title'>Добавление товара</h2>
-            <Form onChange={this.changeCard} />
+            <Form onChange={this.handleSubmit} />
           </section>
           <section className='table__list'>
-            <h2 class='visually-hidden'>Список товаров</h2>
-            <label class='label filter'>
-              <select class='select filter__select' name='' id=''>
+            <h2 className='visually-hidden'>Список товаров</h2>
+            <label className='label filter'>
+              <select className='select filter__select' name='' id=''>
                 <option value='' selected='selected'>
                   По умолчанию
                 </option>

@@ -6,6 +6,7 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
 }
 
 .label {
@@ -24,7 +25,7 @@
 
 .form__label {
   position: relative;
-  margin: 16px 0;
+  margin: 8px 0;
 }
 
 .label__required {
@@ -32,7 +33,7 @@
 }
 
 .label__required::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 4px;
@@ -42,7 +43,7 @@
 }
 
 .form__textarea {
-  min-height: 108px;
+  min-height: 88px;
 }
 .input,
 .select,
@@ -58,13 +59,20 @@
 
 .form__button {
   width: 100%;
-  margin-top: 8px;
+  margin-top: 18px;
+}
+
+.form__button-disabled {
+  background-color: #eeeeee;
+  color: #b4b4b4;
+  width: 100%;
+  margin-top: 18px;
 }
 
 .button {
   display: inline-block;
   padding: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
@@ -74,4 +82,3 @@
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   border-radius: 10px;
 }
-
